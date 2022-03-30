@@ -1,0 +1,255 @@
+body{
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+
+}
+/* header */
+nav{
+     position:sticky;
+    height: 60px;
+    background-color:#0D0D0D;
+    border: 1px solid ;
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+}
+#head-line{
+    padding-left: 15px;
+    font-size: 40px;
+    font-weight: 550;
+    color: #fdfdfd;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fdfdfd;
+    font-size: 30px;
+    font-weight: 550;
+}
+.fa-search, .fa-shopping-cart{
+     font-size: 20px;
+}
+
+.first{
+    display: flex;
+    margin: 0 90px;
+}
+/* first section */
+.h{
+    width: 50%;
+}
+.h>h1{
+    
+    font-size: 70px;
+    color: rgba(36, 33, 33, 0.856);
+    line-height: 80%;
+    font-weight: 500px;
+    margin: 0;
+}
+.h>p{
+    font-size: 30px;
+    line-height: 80%;
+}
+.h>a{
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 3px 30px;
+    background-color: rgb(199, 21, 66);
+    border-radius: 30px;
+}
+.fa-arrow-right{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.h>img{
+
+    width: 70%;
+    margin-left: 20%;
+    
+    border-radius: 200px;
+    transition: transform 2s linear;
+}
+.h img:hover{
+    transform: rotate(10deg) scale(1.1);
+}
+.start{
+    margin-top: 40px;
+}
+/* list of brands */
+.brands{
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 200px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(54, 52, 52, 0.144);
+    border-bottom: 1px solid rgba(54, 52, 52, 0.144);
+}
+/* Collection part */
+.product-container>h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(36, 33, 33, 0.856);
+    text-align: center;
+}
+.frame{
+    width: 280px;
+    height: 430px;
+    border-radius: 5px;
+    box-shadow: 10px 15px 25px 20px rgba(177, 172, 172, 0.239);
+    margin-bottom: 30px;
+    background-color: white;
+}
+.photo>img{
+
+    width: 95%;
+    border-radius: 5px;
+    margin: 7px 7px 0 7px;
+}
+.details{
+    padding: 0 20px;
+    line-height:0;
+}
+.details>h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.details>h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin: 35px 0 15px 0;
+}
+.fa-star, .fa-star-half-alt{
+    font-size: 12px;
+    color: orange;
+}
+.rating{
+    font-size: 20px;
+    line-height: 0;
+}
+.details>p{
+    font-size: 25px;
+    line-height: 1;
+    margin: 5px 0;
+    color: rgba(36, 33, 33, 0.856);
+}
+
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 210px;
+}
+.see-more a{
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(199, 21, 66);
+}
+.offers{
+    display: flex;
+    margin: 20px 200px;
+}
+.order{
+    width: 50%;
+}
+.burger img{
+    width: 70%;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.order h2{
+    font-size: 50px;
+    margin: 0;
+}
+.order p{
+    font-size: 25px;
+    margin: 0;
+    text-align: justify;
+    line-height: 90%;
+    color: rgba(36, 33, 33, 0.856);
+}
+.order a{
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0 20px;
+    background-color: rgb(199, 21, 66);
+    border-radius: 20px;
+}
+.footer{
+    height: 200px;
+    background-color: rgb(21, 21, 56);
+    color: whitesmoke;
+    text-align: center;
+    padding: 30px 0 0 10px;
+}
+.footer-details>h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+}
+.footer-details p{
+    margin: 0;
+    font-size: 20px;
+}
+.socials a{
+    color: whitesmoke;
+    margin: 7px;
+    font-size: 30px;
+}
+.socials a:hover{
+    color: rgb(199, 21, 66);
+}
+
+    /* Mobile device  */
+
+@media (max-width: 688px) {
+
+    body{
+        font-family: 'Dongle', sans-serif;
+        margin: 0;
+        background-color: #46B2E0;
+        background-size: cover;
+    }
+    nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 688px;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    #head-line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding-left: 200px;
+       
+           
+    }
+    .first{
+        flex-direction: column;
+    }
+    .collection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
